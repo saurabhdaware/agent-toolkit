@@ -16,7 +16,7 @@ Use AskQuestion to get PR URL / PR Number / Repository if not provided in prompt
 
 Extract following variables from {{PR_URL}}. We'll use them ahead
 
-- **REPO**: '{{username}}/{{reponame}}'
+- **REPO**: '{{owner}}/{{reponame}}'
 - **PR_NUMBER**: {{number}}
 
 E.g. in PR_URL: https://github.com/saurabhdaware/skills/pull/123, REPO=saurabhdaware/skills and PR_NUMBER=123
@@ -46,7 +46,7 @@ Print a table with following columns-
 
 Now we'll find the logs to see why CI checks are failing.
 
-For each failing github actions CI checks,
+For each failing github actions CI checks (run it as separate subagents if possible),
 
 - Extract RUN_ID and JOB_ID from the Link
 - Command to get full logs `gh run view {{RUN_ID}} --job {{JOB_ID}} --log --repo {{REPO}}` (Logs can be large so smartly use `grep` to filter errors and their reasons)
