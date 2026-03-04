@@ -1,4 +1,4 @@
-# @saurabhdaware/agent-toolkit
+# @saurabhdaware/agent-toolkit (WIP 🚧 🏗️)
 
 Working on open-sourcing my personal AI workflow as an agent-toolkit / plugin
 
@@ -10,4 +10,12 @@ I would recommend installing these as global skills rather than project skills (
 npx skills add saurabhdaware/agent-toolkit --skill '*'
 ```
 
-WIP 🚧 🏗️
+## Checklist
+
+- [x] plan-and-execute
+- [x] /yolo
+- [x] /review-ci
+- [x] /review-ui
+- [x] /brainstorm
+- [ ] /review-pr
+- [ ] ~/feature~

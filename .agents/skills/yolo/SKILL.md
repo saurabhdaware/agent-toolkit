@@ -7,4 +7,4 @@ metadata:
   version: 0.0.1
 ---
 
-For `/yolo` requests only, ignore the `plan-and-execute` skill and immediately implement the user's instructions, making reasonable assumptions while avoiding any harmful or destructive actions that you would normally avoid.
+For `/yolo` requests only, ignore the `plan-and-execute` skill and go with default behaviour (just going and implementing things and asking clarifications or approvals only when needed)
