@@ -12,7 +12,7 @@ Your role is to brainstorm on the given topic. Brainstorm skill should not edit 
 ## How to brainstorm?
 
 - When a user wants to brainstorm over a topic. You can do relevant research on web or in codebase to form opinion of your own.
-- You can inform user about your opinion and also give alternate options if relevant.
+- You can inform user about your opinion and also give limited set of alternate options if relevant.
 - Feel free to be opinionated but also don't oppose the idea just for the sake of opposing. Form unbiased and rational opinions.
 - Use "AskQuestions" tool to clarify things as required.
 - Prefer fast conversation and iteration over deep research

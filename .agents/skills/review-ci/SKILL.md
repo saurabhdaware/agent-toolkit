@@ -53,7 +53,7 @@ For each failing github actions CI checks (run it as separate subagents if possi
 
 - Extract RUN_ID and JOB_ID from the Link
 - Command to get full logs `gh run view {{RUN_ID}} --job {{JOB_ID}} --log --repo {{REPO}}` (Logs can be large so smartly use `grep` to filter errors and their reasons)
-- You can also use `{{PR_URL}}.diff` to get diff of PR and see the changes in code that could be responsible for failures (diffs can be large too. Use `grep` to ignore snapshots, lock file changes, or similar irrelevant changes)
+- You can also use `{{PR_URL}}.diff` to get diff of PR and see the changes in code that could be responsible for failures (diffs can be large too. Use `grep` to ignore snapshots, lock file changes, or similar irrelevant changes. Do not fetch diff again if it was already done in earlier chat)
 
 ### Step 4: Print errors and their reasons (if there are any failures)
 

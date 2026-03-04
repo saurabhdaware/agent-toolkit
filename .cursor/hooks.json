@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterAgentResponse": [
+      {
+        "command": "node .cursor/hooks/say-response.js"
+      }
+    ]
+  }
+}
+
