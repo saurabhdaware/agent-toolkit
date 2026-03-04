@@ -2,6 +2,9 @@
 name: review-ci
 description: Review the CI status of a GitHub Pull Request using GitHub CLI (`gh`). Use when the user asks to check CI status, investigate failing checks, or understand why a PR pipeline is failing.
 disable-model-invocation: true
+metadata:
+  author: Saurabh Daware (https://srbh.dev)
+  version: 0.0.1
 ---
 
 Your job is to check the CI status of the given Pull Request and explain whether checks are passing or failing, and why.

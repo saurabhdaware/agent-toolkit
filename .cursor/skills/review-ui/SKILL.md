@@ -2,6 +2,9 @@
 name: review-ui
 description: Review a web UI flow by running `agent-browser` against a provided URL and scenario. Use when the user asks to test a UI, reproduce steps, validate UX, or verify a web flow on a URL.
 disable-model-invocation: true
+metadata:
+  author: Saurabh Daware (https://srbh.dev)
+  version: 0.0.1
 ---
 
 Your job is review the given URL and inform if the scenarios are working or not
