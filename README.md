@@ -1,2 +1,5 @@
-# agent-toolkit
-Open-sourcing my personal AI workflow as an agent toolkit
+# @saurabhdaware/agent-toolkit
+
+Working on open-sourcing my personal AI workflow as an agent-toolkit / plugin
+
+WIP 🚧 🏗️
