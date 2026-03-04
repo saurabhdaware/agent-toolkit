@@ -22,7 +22,7 @@ Extract following variables from {{PR_URL}}. We'll use them ahead
 - **REPO**: '{{owner}}/{{reponame}}'
 - **PR_NUMBER**: {{number}}
 
-E.g. in PR_URL: https://github.com/saurabhdaware/skills/pull/123, REPO=saurabhdaware/skills and PR_NUMBER=123
+E.g. in PR_URL: https://github.com/saurabhdaware/agent-toolkit/pull/123, REPO=saurabhdaware/agent-toolkit and PR_NUMBER=123
 
 ## Steps to Review CI
 

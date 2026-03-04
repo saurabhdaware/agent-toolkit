@@ -1,2 +1,2 @@
-# skills
-Open-sourcing my personal AI workflow as skills
+# agent-toolkit
+Open-sourcing my personal AI workflow as an agent toolkit
