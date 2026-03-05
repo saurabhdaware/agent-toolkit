@@ -22,6 +22,7 @@ All skills in this repo (except `plan-and-execute` skill) have `disable-model-in
 | `/review-ui`       | Reviews a web UI flow on a given URL.<br>Runs scenarios and reports whether flows work as expected.                           | Invoked with `/review-ui` slash command.                                |
 | `/brainstorm`      | Facilitates open-ended idea generation and structured brainstorming.<br>Keeps discussion concise and focused on options.      | Invoked with `/brainstorm` slash command.                               |
 | `/review-pr`       | Orchestrates an end-to-end PR review (code, CI, and UI when available).<br>Combines outputs from `review-ci` and `review-ui`. | Invoked with `/review-pr` slash command.                                |
+| `/get-pr-comments` | Retrieves comments for a pull request in a clear, readable format.                                                            | Invoked with `/get-pr-comments` slash command.                          |
 
 ## Core Principles of My AI Workflow
 
