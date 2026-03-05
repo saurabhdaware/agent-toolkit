@@ -27,17 +27,29 @@ E.g. in PR_URL: https://github.com/saurabhdaware/agent-toolkit/pull/123, REPO=sa
 You can use this command to fetch details of comments
 
 ```sh
+# to get review comments
 gh api repos/{{REPO}}/pulls/{{PR_NUMBER}}/comments --template '
 [{{range $i, $c := .}}{{if $i}},{{end}}
   {
     "diff": "{{$c.diff_hunk}}",
     "user": "{{$c.user.login}}",
-    "comment": "{{$c.body}}"
+    "comment": "{{$c.body}}",
+    "link": "{{$c.html_url}}"
+  }
+{{end}}]'
+
+# to get general comments from the PR
+gh api repos/{{REPO}}/issues/{{PR_NUMBER}}/comments --template '
+[{{range $i, $c := .}}{{if $i}},{{end}}
+  {
+    "user": "{{$c.user.login}}",
+    "comment": "{{$c.body}}",
+    "link": "{{$c.html_url}}"
   }
 {{end}}]'
 ```
 
-Show the fetched comments in pretty and readable format to user.
+Show the fetched comments in pretty and readable format to user with clickable link for each comment.
 
 ## Example
 
@@ -48,6 +60,14 @@ gh api repos/abelljs/abell/pulls/190/comments --template '
 [{{range $i, $c := .}}{{if $i}},{{end}}
   {
     "diff": "{{$c.diff_hunk}}",
+    "user": "{{$c.user.login}}",
+    "comment": "{{$c.body}}"
+  }
+{{end}}]'
+
+gh api repos/abelljs/abell/issues/190/comments --template '
+[{{range $i, $c := .}}{{if $i}},{{end}}
+  {
     "user": "{{$c.user.login}}",
     "comment": "{{$c.body}}"
   }
