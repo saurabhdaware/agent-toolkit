@@ -45,6 +45,7 @@ These two skills are my core workflow. Other skills are mostly nice utilities fo
 - [x] /review-ui
 - [x] /brainstorm
 - [x] /review-pr
+- [x] /get-pr-comments
 - [ ] ~/feature~
 
 ### Hooks
