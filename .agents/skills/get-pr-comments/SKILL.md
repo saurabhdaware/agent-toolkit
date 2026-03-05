@@ -49,8 +49,6 @@ gh api repos/{{REPO}}/issues/{{PR_NUMBER}}/comments --template '
 {{end}}]'
 ```
 
-Show the fetched comments in pretty and readable format to user with clickable link for each comment.
-
 ## Example
 
 For `https://github.com/abelljs/abell/pull/190`, the following shell command can be used to fetch comments
@@ -73,3 +71,27 @@ gh api repos/abelljs/abell/issues/190/comments --template '
   }
 {{end}}]'
 ```
+
+## Output Format
+
+Respond in the following format
+
+<Output>
+## Comments
+
+### 1. By {{ user }}
+
+Diff (if applicable):
+
+```diff
+{{ diff }}
+```
+
+Comment: {{ comment }}
+Link: {{ link }} (Clickable link)
+
+.
+.
+.
+For N number of comments
+</Output>
