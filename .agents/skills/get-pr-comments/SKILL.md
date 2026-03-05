@@ -30,7 +30,7 @@ You can use this command to fetch details of comments
 gh api repos/{{REPO}}/pulls/{{PR_NUMBER}}/comments --template '
 [{{range $i, $c := .}}{{if $i}},{{end}}
   {
-    "diff_hunk": "{{$c.diff_hunk}}",
+    "diff": "{{$c.diff_hunk}}",
     "user": "{{$c.user.login}}",
     "comment": "{{$c.body}}"
   }
@@ -47,9 +47,9 @@ For `https://github.com/abelljs/abell/pull/190`, the following shell command can
 gh api repos/abelljs/abell/pulls/190/comments --template '
 [{{range $i, $c := .}}{{if $i}},{{end}}
   {
-    "login": "{{$c.user.login}}",
-    "diff_hunk": "{{$c.diff_hunk}}",
-    "body": "{{$c.body}}"
+    "diff": "{{$c.diff_hunk}}",
+    "user": "{{$c.user.login}}",
+    "comment": "{{$c.body}}"
   }
 {{end}}]'
 ```
