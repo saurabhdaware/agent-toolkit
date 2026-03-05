@@ -1,12 +1,13 @@
 {
   "name": "@saurabhdaware/agent-toolkit",
   "private": true,
+  "type": "module",
   "version": "0.0.1",
   "description": "Open-sourcing my personal AI workflow as an agent toolkit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update-skill-metadata": "node scripts/update-skill-metadata.mjs"
+    "update-skill-metadata": "node scripts/update-skill-metadata.js"
   },
   "repository": {
     "type": "git",

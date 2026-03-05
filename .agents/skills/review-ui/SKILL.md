@@ -20,7 +20,7 @@ Use AskQuestion to get URL, Mode, and Scenario if not given in prompt
 ## Steps to Review UI
 
 1. Run `agent-browser --help` to get CLI docs.
-   - If `agent-browser` command is not available, check [agent-browser-installation guide](references/agent-browser-installation.md)
+   - If `agent-browser` command is not available, check [agent-browser-installation guide](/references/agent-browser-installation.md)
 2. Use `agent-browser` to open the {URL(s)} in {Mode}
 3. Test out the {Scenario(s)} or assume the scenarios depending on what you see in the UI
 4. Close the `agent-browser`
