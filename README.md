@@ -60,6 +60,7 @@ These two skills are my core workflow. Other skills are mostly nice utilities fo
 ### Hooks
 
 - [ ] A cursor hook that makes your agent respond back?
+- [ ] A denylist cursor hook?
 
 ### Plugin
 
