@@ -6,8 +6,16 @@ Working on open-sourcing my personal AI workflow as an agent-toolkit / plugin
 
 I would recommend installing these as global skills rather than project skills (unless everyone in your team prefers this workflow). The following command will prompt you to choose where you want to install the skills before installing
 
+To install all skills --
+
 ```sh
 npx skills add saurabhdaware/agent-toolkit --skill '*'
+```
+
+To select and install skills (few skills depend on other skills so they might not work as expected here) --
+
+```sh
+npx skills adds saurabhdaware/agent-toolkit
 ```
 
 ## Workflow
